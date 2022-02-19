@@ -59,7 +59,7 @@ h4 {
     grid-template-columns: repeat(5, auto);
     li a {
       display: block;
-      margin-left: 15px;
+      margin-left: 10px;
       &:hover {
         color: orangered;
       }
@@ -100,6 +100,10 @@ h4 {
       text-align: center;
       border: 1px solid #f3f3f2;
       padding: 40px 20px;
+      transition: 0.3s;
+      &:hover {
+        border: 1px solid orangered;
+      }
       img {
         border: 1px solid #ddd;
         width: 60px;
@@ -188,7 +192,7 @@ h4 {
   padding: 80px 0;
   .contact {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
     column-gap: 20px;
     &-form input,
     textarea {
@@ -255,4 +259,94 @@ i {
 
 /*
    footer Area End
+*/
+
+/*
+Responsive Design Code Start
+*/
+/* Medium Layout: 1280px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Tablet Layout: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+  .about__area-box {
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 3%;
+  }
+  .services__area .services {
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 3%;
+  }
+  .gallery__area__gallery {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+/* Mobile Layout: 320px */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 300px;
+  }
+  .header {
+    grid-template-columns: auto;
+    text-align: center;
+    .menu ul {
+      margin-top: 20px;
+      li a {
+        margin-left: 8px;
+      }
+    }
+  }
+  .about__area {
+    padding: 0px 0;
+    &-box {
+      grid-template-columns: repeat(1, auto);
+      grid-gap: 1%;
+    }
+  }
+  .services__area {
+    background-color: #f2f2f2;
+    padding: 0;
+    margin-top: 40px;
+    .services {
+      grid-template-columns: 12fr;
+      .single-service {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 15px;
+  }
+  .gallery__area {
+    padding: 0;
+    &__gallery {
+      grid-template-columns: repeat(2, auto);
+      margin-bottom: 20px;
+    }
+  }
+  .contact__area {
+    padding: 0;
+    .contact {
+      grid-template-columns: auto;
+    }
+  }
+}
+/* Wide Mobile Layout: 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 450px;
+  }
+  .menu {
+    margin: 0 auto;
+  }
+}
+/*
+Responsive Design Code End
 */
