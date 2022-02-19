@@ -1,1 +1,223 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/*
+   Common Code Start
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h4 {
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+/*
+   Common Code End
+*/
+/*
+   Header Code Start
+*/
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 0;
+}
+
+.header .logo a {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.header menu ul {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+}
+
+.header menu ul li a {
+  display: block;
+  margin-left: 15px;
+}
+
+.header menu ul li a:hover {
+  color: orangered;
+}
+
+/*
+   Header Code End
+*/
+.banner__area img {
+  width: 100%;
+  border: 3px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*
+   About Area Start
+*/
+.about__area {
+  padding: 80px 0;
+}
+
+.about__area-top {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.about__area-top h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.about__area-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.about__area-box .single-about {
+  text-align: center;
+  border: 1px solid #f3f3f2;
+  padding: 40px 20px;
+}
+
+.about__area-box .single-about img {
+  border: 1px solid #ddd;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 5px;
+}
+
+.about__area-box .single-about h4 {
+  text-transform: capitalize;
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+/*
+   About Area End
+*/
+/*
+   Service Area Start
+*/
+.services__area {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+}
+
+.services__area .services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.services__area .services .single-service {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.services__area .services .single-service h4 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 22px;
+  background-color: teal;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.services__area .services .single-service p {
+  margin: 10px 0;
+}
+
+.services__area .services .single-service a {
+  display: inline-block;
+  background-color: orangered;
+  color: #fff;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/*
+   Service Area End
+*/
+/*
+   Gallery Area Start
+*/
+.gallery__area {
+  padding: 80px 0;
+}
+
+.gallery__area__gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  grid-gap: 20px;
+}
+
+.gallery__area__gallery .single__gallery img {
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+/*
+   Gallery Area End
+*/
+/*# sourceMappingURL=style.css.map */
