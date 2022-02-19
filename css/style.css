@@ -220,4 +220,91 @@ h4 {
 /*
    Gallery Area End
 */
+/*
+   Contact Area Start
+*/
+.contact__area {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+}
+
+.contact__area .contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.contact__area .contact-form input,
+.contact__area .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.contact__area .contact input[type="submit"] {
+  background-color: tomato;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.contact__area .contact input[type="submit"]:hover {
+  background-color: teal;
+}
+
+.contact-address .single__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.contact-address .single__address span {
+  display: block;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+i {
+  display: inline-block;
+  background-color: tomato;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  padding: 5px;
+}
+
+/*
+   Contact Area End
+*/
+/*
+   footer Area Start
+*/
+.footer__area {
+  background-color: teal;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer__area p {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/*
+   footer Area End
+*/
 /*# sourceMappingURL=style.css.map */

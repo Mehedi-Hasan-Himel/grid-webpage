@@ -179,3 +179,80 @@ h4 {
 /*
    Gallery Area End
 */
+
+/*
+   Contact Area Start
+*/
+.contact__area {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+  .contact {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 20px;
+    &-form input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+    }
+    input[type="submit"] {
+      background-color: tomato;
+      border: 0;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover {
+        background-color: teal;
+      }
+    }
+  }
+}
+.contact-address {
+  .single__address {
+    display: flex;
+    margin-bottom: 5%;
+    span {
+      display: block;
+      font-weight: normal;
+      font-size: 15px;
+    }
+  }
+}
+i {
+  display: inline-block;
+  background-color: tomato;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  padding: 5px;
+}
+/*
+   Contact Area End
+*/
+
+/*
+   footer Area Start
+*/
+
+.footer__area {
+  background-color: teal;
+  text-align: center;
+  padding: 20px 0;
+  p {
+    color: #fff;
+    text-transform: capitalize;
+  }
+}
+
+/*
+   footer Area End
+*/
